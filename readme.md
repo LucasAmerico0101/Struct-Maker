@@ -1,71 +1,87 @@
-# Struct-Maker
+# Struct Maker
 
-**Struct=Maker** is a command-line tool that automates the creation of folder structures for new projects. It allows you to quickly set up the basic folder and file structure for software projects, ensuring organization and consistency from the start.
+**Struct Maker** is a command-line tool to automate the creation of project folder structures. This tool helps you quickly set up the basic directory structure for your projects.
 
 ## Features
 
-- Automatically creates folders and subfolders commonly used in projects.
-- Flexible configuration for different types of projects (web, API, scripts, etc.).
-- Generates base files like `.gitignore` and `README.md`.
-- Easy to use and configure.
+- Easily create a new project directory with a predefined structure.
+- Customize the structure according to your needs.
+
+## Prerequisites
+
+Make sure you have Python 3.x installed on your system.
 
 ## Installation
 
-You can install* **Struct-Maker* via `pip`:
+You don't need to install Struct Maker via `pip`. You can run the script directly. Follow these steps:
 
-```bash
-pip install structmaker
+1. **Download the Code**
+
+   Clone the repository or download the source code:
+
+   ```bash
+   git clone https://github.com/yourusername/struct-maker.git
+   cd struct-maker
+
+    Run the Script
+
+    You can run the tool directly using Python. Open your terminal or command prompt and execute:
+
+    bash
+
+    python struct_maker/cli.py create my_new_project
+
+    Replace my_new_project with the name of your new project directory.
 
 Usage
 
-After installation, you can create the folder structure for your new project with the following command:
+To create a new project, run:
 
 bash
 
-structmaker create my_new_project
+python struct_maker/cli.py create <project_name>
 
-This will create the following folder structure inside the my_new_project directory:
+Replace <project_name> with the desired name for your project directory. The tool will generate the directory structure for you.
+Example
 
-plaintext
+To create a project named my_project, use:
 
-my_new_project/
-│
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── services/
-│   ├── utils/
-│   ├── styles/
-│   ├── config/
-│   ├── models/
-│   ├── views/
-│   └── main.*
-│
-├── public/
-│   ├── index.html
-│   └── ...
-│
-├── tests/
-│   ├── unit/
-│   ├── integration/
-│   └── ...
-│
-├── build/
-│   └── ...
-│
-├── docs/
-│   └── ...
-│
-├── scripts/
-│   └── ...
-│
-├── .gitignore
-├── README.md
-└── ...
+bash
 
+python struct_maker/cli.py create my_project
+
+This will create a directory named my_project with the specified structure.
+Customization
+
+You can modify the structure by editing the cli.py file. Update the script to change the directories and files that are created.
 Contributing
 
-Contributions are welcome! Feel free to open issues or submit pull requests on the GitHub repository.
+If you want to contribute to the project, feel free to fork the repository and submit a pull request with your improvements.
 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the LICENSE file for details.
+Contact
+
+For any questions or feedback, you can contact the author:
+
+    Lucas Americo
+    Email: lucasamerico695@tutamail.com
+
+bash
+
+
+### Instruções de Uso
+
+1. **Baixar o Código**:
+   - Clone o repositório ou baixe o código fonte.
+
+   ```bash
+   git clone https://github.com/yourusername/struct-maker.git
+   cd struct-maker
+
+    Executar o Script:
+        Use Python para executar o script diretamente, substituindo <project_name> pelo nome desejado do seu projeto.
+
+    bash
+
+python struct_maker/cli.py create <project_name>

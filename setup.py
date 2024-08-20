@@ -2,20 +2,20 @@ from setuptools import setup, find_packages
 
 setup(
     name='struct-maker',
-    version='0.1.0',
+    version='0.1.3',
     description='A command-line tool for automating project folder structure creation.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     author='Lucas Americo',
     author_email='lucasamerico695@tutamail.com',
-    url='https://github.com/lucasamerico/struct-maker',  # Update this with your actual repository URL
+    url='https://github.com/LucasAmerico0101/Struct-Maker',  
     packages=find_packages(),
     install_requires=[
-        "os>=1.0"
+        
     ],
     entry_points={
         'console_scripts': [
-            'struct-maker=struct_maker.main:main',  
+            'struct-maker=struct_maker.cli:main',  
         ],
     },
     classifiers=[
@@ -29,7 +29,7 @@ setup(
     ],
     python_requires='>=3.6',
     project_urls={
-        'Documentation': 'https://github.com/lucasamerico/struct-maker#readme',  
-        'Source': 'https://github.com/lucasamerico/struct-maker',  
+        'Documentation': 'https://github.com/LucasAmerico0101/Struct-Maker#readme',  
+        'Source': 'https://github.com/LucasAmerico0101/Struct-Maker',  
     },
 )
